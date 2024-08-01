@@ -1,0 +1,71 @@
+/* id */
+#faq {
+	display: flex;
+	flex-direction: row;
+    gap: 20px;
+}
+
+
+
+#bigBox {
+    
+	background-color: hsl(0, 0%, 100%);
+	width: 480px;
+	padding: 30px 20px;
+	border-radius: 14px;
+	margin: 50px auto;
+}
+
+
+/* global */
+body {
+	background-image: url(/assets/images/background-pattern-desktop.svg);
+	background-color: hsl(275, 100%, 97%);
+	background-repeat: no-repeat;
+    font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    /* margin-left: 20px; */
+}
+
+p {
+	font-size: 16px;
+}
+
+
+/* class */
+.question {
+    font-weight: 600;
+	/* margin-right: 40px; */
+}
+
+.question::after {
+	content: url("/assets/images/icon-plus.svg");
+}
+
+.active::after {
+	content: url("/assets/images/icon-minus.svg");
+}
+
+.answer {
+	font-weight: 400;
+	color: hsl(292, 16%, 49%);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+
+.drop {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+	width: 480px;
+	background-color: white;
+	border-style: none;
+}
